@@ -1,4 +1,5 @@
 # Built application files
+/build/android-profile
 /*/build/
 
 # Crashlytics configuations
