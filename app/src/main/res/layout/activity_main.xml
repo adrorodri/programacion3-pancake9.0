@@ -4,16 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.programacion3.pancake9.app.MainActivity">
-
+    tools:context="com.example.andres.mundial.MainActivity"
+    android:background="#9f0f0f">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="200dp"
+        android:src="@drawable/logorusia"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello Pancake 9.0!"
-        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:text="Log In"
+        android:textColor="#ffff"
+        android:onClick="click"
+        android:textSize="@dimen/grande"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/logIn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Sign Up"
+        android:id="@+id/signUp"
+        android:textColor="#ffff"
+        android:onClick="click"
+        android:textSize="@dimen/medio"/>
 
+</LinearLayout>
 </android.support.constraint.ConstraintLayout>
