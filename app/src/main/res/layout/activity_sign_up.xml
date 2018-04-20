@@ -6,4 +6,59 @@
     android:layout_height="match_parent"
     tools:context="com.example.andres.mundial.SignUpActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/colorSignUp">
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="150dp"
+            android:src="@drawable/imagenrica"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correo electronico"
+            android:textSize="@dimen/medio"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Escriba su correo electronico"
+            android:id="@+id/correoElectronico"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usuario"
+            android:textSize="@dimen/medio"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Escriba un nombre de usuario"
+            android:inputType="textPassword"
+            android:id="@+id/nombreDeUsuario"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contraseña"
+            android:textSize="@dimen/medio"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Escriba una contraseña"
+            android:id="@+id/contrasenaA"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="confirmar"
+            android:textColor="#ffff"
+            android:background="#bf092845"
+            android:id="@+id/singUpConfirm"/>
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
