@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,56 +8,68 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorAccent"
         android:gravity="center"
-        android:orientation="vertical"
-        android:background="@color/colorSignUp">
+        android:orientation="vertical">
         <ImageView
-            android:layout_width="300dp"
-            android:layout_height="150dp"
-            android:src="@drawable/logofondoinvi"/>
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/zabivaka" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Correo electronico"
-            android:textSize="@dimen/medio"/>
+            android:textSize="@dimen/medio"
+            android:textColor="@color/colorNegro"/>
+
         <EditText
+            android:id="@+id/correoElectronico"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
             android:hint="Escriba su correo electronico"
-            android:id="@+id/correoElectronico"/>
+            android:inputType="textEmailAddress" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Usuario"
-            android:textSize="@dimen/medio"/>
+            android:textSize="@dimen/medio"
+            android:textColor="@color/colorNegro"/>
+
         <EditText
+            android:id="@+id/nombreDeUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Escriba un nombre de usuario"
-            android:inputType="textPassword"
-            android:id="@+id/nombreDeUsuario"/>
+            android:inputType="textPassword" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Contraseña"
-            android:textSize="@dimen/medio"/>
+            android:textSize="@dimen/medio"
+            android:textColor="@color/colorNegro"/>
+
         <EditText
+            android:id="@+id/contrasenaA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress"
             android:hint="Escriba una contraseña"
-            android:id="@+id/contrasenaA"/>
+            android:inputType="textEmailAddress" />
+
         <Button
+            android:id="@+id/singUpConfirm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="12dp"
+            android:background="#232331"
+            android:onClick="click"
             android:text="confirmar"
-            android:textColor="#ffff"
-            android:background="#bf092845"
-            android:id="@+id/singUpConfirm"/>
+            android:textColor="#ffff" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

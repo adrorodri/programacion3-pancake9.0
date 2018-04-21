@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".LogInActivity" />
         <activity android:name=".SignUpActivity" />
-        <activity android:name=".MenuActivity"></activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".TablaPartidos"></activity>
     </application>
 
 </manifest>
