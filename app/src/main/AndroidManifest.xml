@@ -19,7 +19,8 @@
         <activity android:name=".LogInActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MenuActivity" />
-        <activity android:name=".TablaPartidos"></activity>
+        <activity android:name=".TablaPartidos" />
+        <activity android:name=".Usuario"></activity>
     </application>
 
 </manifest>
