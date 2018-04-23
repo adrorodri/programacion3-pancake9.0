@@ -21,26 +21,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Usuario"
-            android:textSize="@dimen/medio"/>
+            android:textSize="@dimen/medio"
+            android:textStyle="bold"/>
 
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
+            android:gravity="center"
+            android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:hint="Escriba su usuario"
-            android:id="@+id/usuario"/>
+            android:id="@+id/usuario"
+            android:background="@drawable/smooth_square"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Password"
-            android:textSize="@dimen/medio"/>
+            android:textSize="@dimen/medio"
+            android:textStyle="bold"/>
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_width="200dp"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:hint="Escriba su password"
             android:inputType="textPassword"
-            android:id="@+id/password"/>
+            android:id="@+id/password"
+            android:background="@drawable/smooth_square"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -54,9 +62,10 @@
                 android:layout_marginTop="12dp"
                 android:text="Log In"
                 android:textColor="#ffff"
-                android:background="#2b82d4"
+                android:background="@drawable/smooth_square"
                 android:onClick="logClick"
-                android:id="@+id/botLog"/>
+                android:id="@+id/botLog"
+                />
 
             <ImageView
                 android:id="@+id/zabiLogIn"
