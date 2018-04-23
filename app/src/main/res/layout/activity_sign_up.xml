@@ -43,7 +43,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Escriba un nombre de usuario"
-            android:inputType="textPassword" />
+            android:inputType= "textEmailAddress"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Escriba una contraseña"
-            android:inputType="textEmailAddress" />
+            android:inputType="textPassword" />
 
         <Button
             android:id="@+id/singUpConfirm"
