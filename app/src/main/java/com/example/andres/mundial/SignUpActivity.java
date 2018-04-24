@@ -23,7 +23,8 @@ public class SignUpActivity extends AppCompatActivity {
             pos--;
         }
         if( (correoCopia.equals("gmail.com") ||correoCopia.equals("hotmail.com"))&& (correo.charAt(0)!='@' &&
-                correo.charAt(0)!='g'&& correo.charAt(0)!='h'))
+                (correo.length()-9 != 0 || correo.charAt(0)!='g')&& (correo.length()-11 != 0 || correo.charAt(0)!='h') ))
+
             return true;
         else
             return false;

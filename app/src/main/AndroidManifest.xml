@@ -20,7 +20,8 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MenuActivity" />
         <activity android:name=".TablaPartidos" />
-        <activity android:name=".Usuario"></activity>
+        <activity android:name=".Usuario" />
+        <activity android:name=".TablaPosiciones"></activity>
     </application>
 
 </manifest>
