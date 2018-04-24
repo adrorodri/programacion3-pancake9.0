@@ -21,7 +21,8 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".TablaPartidos" />
         <activity android:name=".Usuario" />
-        <activity android:name=".TablaPosiciones"></activity>
+        <activity android:name=".TablaPosiciones" />
+        <activity android:name=".Resultados"></activity>
     </application>
 
 </manifest>
