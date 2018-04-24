@@ -22,7 +22,7 @@ public class MenuActivity extends AppCompatActivity {
                 break;
             }
             case R.id.tablas:{
-                intent = new Intent(this, TablaPosiciones.class);
+                intent = new Intent(this,Posiciones.class);
                 break;
             }
             case R.id.partidos:{
@@ -34,12 +34,15 @@ public class MenuActivity extends AppCompatActivity {
                 break;
             }
             case R.id.resultados:{
+                intent = new Intent(this, Resultados.class);
+                break;
+            }
+            default:{
                 intent = new Intent(this, Usuario.class);
                 break;
             }
-
-
         }
+        startActivity(intent);
     }
 
 

@@ -35,7 +35,7 @@ public class SignUpActivity extends AppCompatActivity {
         correoE = String.valueOf(correo.getText());
         if(verificarCorre(correoE)) {
             Intent i;
-            i = new Intent(this, TablaPartidos.class);
+            i = new Intent(this, Usuario.class);
             startActivity(i);
         }
         else

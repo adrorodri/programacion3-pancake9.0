@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    android:background="#3c3d3e"
+    android:background="@color/colorNegro"
     android:orientation="vertical">
 
     <TextView
@@ -13,6 +11,10 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="@dimen/grande"
+        android:onClick="clickDraw"
         android:text="Perfil" />
 
     <TextView
@@ -20,20 +22,33 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
+
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="@dimen/grande"
+        android:onClick="clickDraw"
         android:text="Tablas" />
 
     <TextView
         android:id="@+id/partidos"
         android:layout_width="match_parent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="@dimen/grande"
         android:layout_height="60dp"
         android:gravity="center"
+        android:onClick="clickDraw"
         android:text="Partidos" />
 
     <TextView
         android:id="@+id/apuestas"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="@dimen/grande"
         android:gravity="center"
+        android:onClick="clickDraw"
         android:text="Sala de Apuestas" />
 
     <TextView
@@ -41,6 +56,10 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:gravity="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="@dimen/grande"
+        android:onClick="clickDraw"
         android:text="Resultados" />
 
- </LinearLayout>
+</LinearLayout>

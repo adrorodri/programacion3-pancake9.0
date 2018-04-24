@@ -39,13 +39,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/alemania" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   2"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -70,13 +70,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/arabiasaudi" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   2"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -98,13 +98,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/argentina" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   6"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -130,13 +130,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/australia" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   4"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -158,13 +158,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/colombia" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   0"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
 
@@ -191,13 +191,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/coreadelsur" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   1"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -219,13 +219,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/costarica" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   5"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -251,13 +251,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/senegal" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   3"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -279,13 +279,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/dinamarca" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   3"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -311,13 +311,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/egipto" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   2"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
 
@@ -340,13 +340,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/espana" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   1"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -372,13 +372,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/inglan" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   2"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
 
@@ -400,13 +400,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/iran" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   0"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
 
@@ -433,13 +433,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/islandia" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   9"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
 
@@ -462,13 +462,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/japon" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   2"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -494,13 +494,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/marruecos" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   4"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
 
@@ -522,13 +522,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/marruecos" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   5"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -554,13 +554,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/nigeria" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   8"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -582,13 +582,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/panama" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   2"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -614,13 +614,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/peru" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   1"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -642,13 +642,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/polonia" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   1"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -674,13 +674,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/portugal" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   7"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -702,13 +702,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/senegal" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   0"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -734,13 +734,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/serbia" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   2"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -762,13 +762,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/suecia" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   6"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                     <ImageView
@@ -794,13 +794,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/suiza" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   9"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
@@ -821,13 +821,13 @@
                             android:layout_height="130dp"
                             android:src="@drawable/tunez" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   2"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
 
@@ -854,16 +854,24 @@
                             android:layout_height="130dp"
                             android:src="@drawable/uruguay" />
 
-                        <TextView
+                        <EditText
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:elegantTextHeight="true"
-                            android:text="   5"
+                            android:hint=""
+                            android:layout_marginStart="20dp"
                             android:textColor="@color/colorAccent"
-                            android:textSize="@dimen/grande" />
+                            android:inputType="textEmailAddress"/>
                     </LinearLayout>
 
                 </LinearLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:background="#353546"
+                    android:layout_gravity="center"
+                    android:text="confirmar"
+                    android:textColor="#ffff"/>
             </LinearLayout>
         </ScrollView>
 

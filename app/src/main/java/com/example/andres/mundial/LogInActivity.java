@@ -28,7 +28,7 @@ public class LogInActivity extends AppCompatActivity {
         passwordV = String.valueOf(password.getText());
         Intent i;
         if (passwordV.equals("123") && usuarioV.equals("Pan")) {
-            i = new Intent(this, MenuActivity.class);
+            i = new Intent(this, Usuario.class);
             startActivity(i);
         } else {
             Toast.makeText(this, "Usuario o cotraseña equivocado", Toast.LENGTH_SHORT).show();
