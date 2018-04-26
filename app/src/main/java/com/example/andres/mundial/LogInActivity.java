@@ -18,10 +18,12 @@ public class LogInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_log_in);
+        setContentView(R.layout.activity_log_in); // TODO: Change ConstraintLayout to another Layout
     }
 
     public void logClick(View view){
+
+        // TODO: Move findViewByIds to onCreate
         usuario = findViewById(R.id.usuario);
         password = findViewById(R.id.password);
         usuarioV = String.valueOf(usuario.getText());
