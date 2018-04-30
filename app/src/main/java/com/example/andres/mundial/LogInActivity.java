@@ -36,6 +36,14 @@ public class LogInActivity extends AppCompatActivity {
         usuarioV = String.valueOf(usuario.getText());
         passwordV = String.valueOf(password.getText());
         Intent i;
+        if (password.getText().toString().isEmpty()) {
+            password.setHint("Llene este campo");
+
+        }
+        if (usuario.getText().toString().isEmpty()) {
+            usuario.setHint("llene este campo");
+
+        }
         if (passwordV.equals("123") && usuarioV.equals("Pan")) {
             i = new Intent(this, Usuario.class);
             SharedPreferences.Editor editor = sharedPreferences.edit();
