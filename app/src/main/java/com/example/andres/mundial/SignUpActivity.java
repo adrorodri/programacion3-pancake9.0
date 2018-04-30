@@ -1,4 +1,4 @@
-package com.example.andres.mundial;
+                                                         package com.example.andres.mundial;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,8 +13,10 @@ public class SignUpActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
+        setContentView(R.layout.activity_sign_up); // TODO: Change ConstraintLayout to another Layout
     }
+
+    // TODO: Optimize.. Can be a lot simpler
     boolean verificarCorre (String correo){
         String correoCopia="";
         int pos = correo.length()-1;
@@ -31,6 +33,7 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     public void click(View view) {
+        // TODO: Move findViewByIds to onCreate
         correo = findViewById(R.id.correoElectronico);
         correoE = String.valueOf(correo.getText());
         if(verificarCorre(correoE)) {
