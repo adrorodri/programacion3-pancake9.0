@@ -38,7 +38,7 @@ public class LogInActivity extends AppCompatActivity {
         Intent i;
         if (password.getText().toString().isEmpty()) {
             password.setHint("Llene este campo");
-
+            password.setHintTextColor(Integer.parseInt("red"));
         }
         if (usuario.getText().toString().isEmpty()) {
             usuario.setHint("llene este campo");
@@ -51,7 +51,8 @@ public class LogInActivity extends AppCompatActivity {
             editor.apply();
             startActivity(i);
         } else {
+            if(){
             Toast.makeText(this, "Usuario o cotraseña equivocado", Toast.LENGTH_SHORT).show();
-        }
+        }}
     }
 }

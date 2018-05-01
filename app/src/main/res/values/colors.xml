@@ -3,7 +3,7 @@
     <color name="colorPrimary">#a01111</color>
     <color name="colorPrimaryDark">#a01111</color>
     <color name="colorAccent">#ffffff</color>
-    <color name="colorRussia">#a01111</color>
+    <color name="colorRussia">#515253</color>
     <color name="colorNegro">#413f3f</color>
-    <color name="azulRusia">#49698e</color>
+    <color name="azulRusia">#050d16</color>
 </resources>
