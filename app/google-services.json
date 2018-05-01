@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "333516206598",
+    "firebase_url": "https://mundial-app.firebaseio.com",
+    "project_id": "mundial-app",
+    "storage_bucket": "mundial-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333516206598:android:6fcccb0dd8bc94df",
+        "android_client_info": {
+          "package_name": "com.example.andres.mundial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333516206598-ee3dg5286dhpnj3l8dnjug0lje493t2a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.andres.mundial",
+            "certificate_hash": "ee80239b4ab99395b6b118262ed855b1b2ae8256"
+          }
+        },
+        {
+          "client_id": "333516206598-0t8s71h1pi0jlj3ginanu61k1189e388.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNYEom-Hnmd9py0kJ88WKL_GRRro0eEuk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333516206598-0t8s71h1pi0jlj3ginanu61k1189e388.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
