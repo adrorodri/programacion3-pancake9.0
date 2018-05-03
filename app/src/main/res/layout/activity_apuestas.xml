@@ -4,878 +4,2105 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@drawable/fondo"
+    android:background="@color/azulRusia"
     >
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ScrollView
-            android:layout_width="wrap_content"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="center"
-            tools:ignore="UselessParent">
+            android:orientation="vertical">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="top|center"
-                android:orientation="vertical">
+                android:text="GRUPO A - APUESTAS"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/grande" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/alemania"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rusia" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Rusia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/medioG"
+                            android:inputType="number"
+                            android:layout_gravity="start"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/medioG"
+                            android:layout_gravity="center"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/medioG"
+                            android:inputType="number"
+                            android:layout_gravity="end"/>
+                    </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/pais2"
+                        android:layout_width="75dp"
+                        android:layout_height="48dp"
+                        android:text="Arabia Saudita"
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/alemania" />
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:id="@+id/arabia"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/arabiasaudi" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/egipto" />
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/arabiasaudi" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Egipto"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Uruguay"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/argentina" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/uruguay" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/rusia" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/australia" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Rusia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
 
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/colombia" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Egipto"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/egipto" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/uruguay" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/coreadelsur" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Uruguay"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Arabia S."
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/costarica" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/arabiasaudi" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/uruguay" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/senegal" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Uruguay"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Rusia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/dinamarca" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/rusia" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/arabiasaudi" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/egipto" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
-
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Arabia S."
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Egipto"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/espana" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/egipto" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/grande"
+                android:textColor="@color/colorAccent"
+                android:text="GRUPO B - APUESTAS"
+                android:layout_marginTop="@dimen/medio"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/marruecos" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/inglan" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
-
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Marruecos"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/iran" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Iran"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/iran" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/espana" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/islandia" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
-
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  España"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Uruguay"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/japon" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/portugal" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/portugal" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/marruecos" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
-
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Portugal"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Marruecos"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/marruecos" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/marruecos" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/iran" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/nigeria" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Iran"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="España"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/panama" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/espana" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/egipto" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/peru" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Egipto"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Uruguay"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/polonia" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/uruguay" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/iran" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/portugal" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Iran"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Portugal"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/senegal" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/portugal" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/espana" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/serbia" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  España"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Marruecos"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/suecia" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/marruecos" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GRUPO C - RESULTADOS"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/grande"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/francia" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/suiza" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Francia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top|center"
+                    android:layout_gravity="end"
                     android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/tunez" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Australia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
 
                     <ImageView
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/v22" />
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/australia" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
 
                     <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/peru" />
 
-                        android:layout_width="20dp"
-                        android:layout_height="20dp"
-                        android:layout_marginVertical="60dp"
-                        android:src="@drawable/s11" />
-
-                    <LinearLayout
+                    <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="130dp"
-                            android:src="@drawable/uruguay" />
-
-                        <EditText
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:hint=""
-                            android:layout_marginStart="20dp"
-                            android:textColor="@color/colorAccent"
-                            android:inputType="textEmailAddress"/>
-                    </LinearLayout>
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Peru"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
 
                 </LinearLayout>
-                <Button
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="25dp"
-                    android:background="#353546"
-                    android:layout_gravity="center"
-                    android:text="confirmar"
-                    android:textColor="#ffff"/>
-            </LinearLayout>
-        </ScrollView>
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
 
-    </FrameLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Dinamarca"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/dinamarca" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/francia" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Francia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Peru"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/peru" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dinamarca" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Dinamarca"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Australia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/australia" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dinamarca" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Dinamarca"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Francia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/francia" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/australia" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Australia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Peru"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/peru" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/grande"
+                android:textColor="@color/colorAccent"
+                android:text="GRUPO D - RESULTADOS"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/argentina" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Argentina"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Islandia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/islandia" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/croacia" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Croacia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Nigeria"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/nigeria" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/argentina" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Argentina"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Croacia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/croacia" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/nigeria" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Nigeria"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Islandia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/islandia" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/nigeria" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Nigeria"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Argentina"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/argentina" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:background="@color/colorRussia">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/islandia" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="  Islandia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="start"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:layout_gravity="center"/>
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medioG"
+                        android:inputType="number"
+                        android:layout_gravity="end"/>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginVertical="5dp"
+                        android:text="Croacia"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/medio" />
+
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:src="@drawable/croacia" />
+                </LinearLayout>
+
+            </FrameLayout>
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medio"
+                android:layout_marginBottom="@dimen/medio"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="CONFIRMAR"
+                android:textSize="@dimen/medioG"
+                android:background="@drawable/cuadradotext"
+                android:id="@+id/botapostar"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
 
     <include
         android:layout_width="match_parent"
