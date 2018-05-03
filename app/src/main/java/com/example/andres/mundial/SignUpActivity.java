@@ -52,7 +52,7 @@ public class SignUpActivity extends AppCompatActivity {
                     Log.w(TAG,"onAuthStateChanged - signed up" + firebaseUser.getUid() );
                     Log.w(TAG,"onAuthStateChanged - signed up" + firebaseUser.getEmail());
                 }else{
-                    Log.w(TAG,"onAuthStateChanged - signed out" + firebaseUser.getUid());
+                   // Log.w(TAG,"onAuthStateChanged - signed out" + firebaseUser.getUid());
                 }
             }
         };
@@ -86,11 +86,13 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     private void signUp(String email, String password){
+        final Intent i = new Intent(this, Usuario.class);
         firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(SignUpActivity.this, "Creación de cuenta correcta", Toast.LENGTH_SHORT).show();
+                    startActivity(i);
                 }else{
                     Toast.makeText(SignUpActivity.this, "Creación de cuenta incorrecta", Toast.LENGTH_SHORT).show();
                 }

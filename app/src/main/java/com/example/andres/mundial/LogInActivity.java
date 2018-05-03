@@ -61,7 +61,7 @@ public class LogInActivity extends AppCompatActivity {
                     Log.w(TAG,"onAuthStateChanged - signed up" + firebaseUser.getUid() );
                     Log.w(TAG,"onAuthStateChanged - signed up" + firebaseUser.getEmail());
                 }else{
-                    Log.w(TAG,"onAuthStateChanged - signed out" + firebaseUser.getUid());
+                    //Log.w(TAG,"onAuthStateChanged - signed out" + firebaseUser.getUid());
                 }
             }
         };
@@ -90,12 +90,15 @@ public class LogInActivity extends AppCompatActivity {
     }
 
     private void logIn(String usuario, String password){
+        final Intent i = new Intent(this, Usuario.class);
         firebaseAuth.signInWithEmailAndPassword(usuario, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if(task.isSuccessful()){
                     Toast.makeText(LogInActivity.this, "Validación correcta", Toast.LENGTH_SHORT).show();
+                    startActivity(i);
+
                 }else{
                     Toast.makeText(LogInActivity.this, "Error en la validación", Toast.LENGTH_SHORT).show();
                 }
