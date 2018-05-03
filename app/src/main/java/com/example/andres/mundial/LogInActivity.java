@@ -90,6 +90,7 @@ public class LogInActivity extends AppCompatActivity {
     }
 
     private void logIn(String usuario, String password){
+        final FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
         final Intent i = new Intent(this, Usuario.class);
         firebaseAuth.signInWithEmailAndPassword(usuario, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -97,7 +98,8 @@ public class LogInActivity extends AppCompatActivity {
 
                 if(task.isSuccessful()){
                     Toast.makeText(LogInActivity.this, "Validación correcta", Toast.LENGTH_SHORT).show();
-                    startActivity(i);
+                    if(firebaseUser.isEmailVerified()){
+                    startActivity(i);}
 
                 }else{
                     Toast.makeText(LogInActivity.this, "Error en la validación", Toast.LENGTH_SHORT).show();

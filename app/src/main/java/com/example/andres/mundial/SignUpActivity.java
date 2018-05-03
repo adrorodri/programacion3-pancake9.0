@@ -92,7 +92,11 @@ public class SignUpActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(SignUpActivity.this, "Creación de cuenta correcta", Toast.LENGTH_SHORT).show();
+                    FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+                    firebaseUser.sendEmailVerification();
+                    if(firebaseUser.isEmailVerified()){
                     startActivity(i);
+                    }
                 }else{
                     Toast.makeText(SignUpActivity.this, "Creación de cuenta incorrecta", Toast.LENGTH_SHORT).show();
                 }
