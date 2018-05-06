@@ -79,14 +79,14 @@ public class SignUpActivity extends AppCompatActivity {
         correoE = String.valueOf(correo.getText());
         if (verificarCorre(correoE)) {
             Intent i;
-            i = new Intent(this, Usuario.class);
+            i = new Intent(this, UsuarioActivity.class);
             startActivity(i);
         } else
             Toast.makeText(this, "Escriba un correo valido", Toast.LENGTH_SHORT).show();
     }
 
     private void signUp(String email, String password){
-        final Intent i = new Intent(this, Usuario.class);
+        final Intent i = new Intent(this, UsuarioActivity.class);
         firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
