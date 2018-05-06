@@ -55,7 +55,8 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center">
                         <EditText
-                            android:layout_width="wrap_content"
+                            android:id="@+id/aa11"
+                           android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=""
                             android:textColor="@color/colorAccent"
@@ -71,6 +72,7 @@
                             android:layout_gravity="center"/>
 
                         <EditText
+                            android:id="@+id/aa12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=""
@@ -139,6 +141,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
+                        android:id="@+id/aa21"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -155,6 +158,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
+                        android:id="@+id/aa22"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -220,6 +224,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
+                        android:id="@+id/aa31"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -236,6 +241,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
+                        android:id="@+id/aa32"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -301,6 +307,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
+                        android:id="@+id/aa41"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -317,6 +324,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
+                        android:id="@+id/aa42"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -382,6 +390,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
+                        android:id="@+id/aa51"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -398,6 +407,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
+                        android:id="@+id/aa52"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -463,6 +473,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
+                        android:id="@+id/aa61"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -479,6 +490,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
+                        android:id="@+id/aa62"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -2097,7 +2109,8 @@
                 android:text="CONFIRMAR"
                 android:textSize="@dimen/medioG"
                 android:background="@drawable/cuadradotext"
-                android:id="@+id/botapostar"/>
+                android:id="@+id/botapostar"
+                android:onClick="apostar"/>
 
 
 

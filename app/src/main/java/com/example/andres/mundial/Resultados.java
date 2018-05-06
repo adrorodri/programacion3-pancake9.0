@@ -4,13 +4,30 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class Resultados extends AppCompatActivity {
 
+    TextView ra1;
+    TextView ra2;
+    int rnum1=0;
+    int rnum2=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_resultados);
+        ra1 = findViewById(R.id.ra11);
+        ra2 = findViewById(R.id.ra12);
+
+    }
+    public void apostar (View view){
+        Comparador a = new Comparador();
+        char r1= ra1.getText().charAt(0);
+        rnum1= r1 -48;
+        char r2= ra1.getText().charAt(0);
+        rnum2= r2 -48;
+        Toast.makeText(this, "Tu puntaje es: "+ a.compara(rnum1, 1, rnum2,2), Toast.LENGTH_SHORT).show();
     }
     public void clickDraw(View view){
         Intent intent;
@@ -42,4 +59,6 @@ public class Resultados extends AppCompatActivity {
         }
         startActivity(intent);
     }
+
+
 }
