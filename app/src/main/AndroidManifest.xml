@@ -19,11 +19,11 @@
         <activity android:name=".LogInActivity" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MenuActivity" />
-        <activity android:name=".TablaPartidos" />
-        <activity android:name=".Usuario" />
-        <activity android:name=".Resultados" />
-        <activity android:name=".Posiciones" />
-        <activity android:name=".Apuestas"></activity>
+        <activity android:name=".TablaPartidosActivity" />
+        <activity android:name=".UsuarioActivity" />
+        <activity android:name=".ResultadosActivity" />
+        <activity android:name=".PosicionesActivity" />
+        <activity android:name=".ApuestasActivity"></activity>
     </application>
 
 </manifest>

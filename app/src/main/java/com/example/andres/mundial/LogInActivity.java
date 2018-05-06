@@ -39,7 +39,7 @@ public class LogInActivity extends AppCompatActivity {
         btnLogIn = findViewById(R.id.botLog);
         sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
         if(sharedPreferences.getBoolean(KEY_USERNAME,false)) {
-            Intent i = new Intent(this, Usuario.class);
+            Intent i = new Intent(this, UsuarioActivity.class);
             startActivity(i);
         }
         initialize();
@@ -79,27 +79,29 @@ public class LogInActivity extends AppCompatActivity {
             usuario.setHint("llene este campo");
         }
         if (passwordV.equals("123") && usuarioV.equals("Pan")) {
-            i = new Intent(this, Usuario.class);
+            i = new Intent(this, UsuarioActivity.class);
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean(KEY_USERNAME, true);
             editor.apply();
             startActivity(i);
         } else {
-            Toast.makeText(this, "Usuario o cotraseña equivocado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "UsuarioActivity o cotraseña equivocado", Toast.LENGTH_SHORT).show();
         }
     }
 
     private void logIn(String usuario, String password){
         final FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
-        final Intent i = new Intent(this, Usuario.class);
+        final Intent i = new Intent(this, UsuarioActivity.class);
         firebaseAuth.signInWithEmailAndPassword(usuario, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if(task.isSuccessful()){
-                    Toast.makeText(LogInActivity.this, "Validación correcta", Toast.LENGTH_SHORT).show();
+
                     if(firebaseUser.isEmailVerified()){
-                    startActivity(i);}
+                        Toast.makeText(LogInActivity.this, "Validación correcta", Toast.LENGTH_SHORT).show();
+                        startActivity(i);
+                    }
 
                 }else{
                     Toast.makeText(LogInActivity.this, "Error en la validación", Toast.LENGTH_SHORT).show();
