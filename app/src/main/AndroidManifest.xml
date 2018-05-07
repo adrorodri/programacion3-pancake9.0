@@ -9,21 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".MainActivity">
+        <activity android:name=".UI.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LogInActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".MenuActivity" />
-        <activity android:name=".TablaPartidosActivity" />
-        <activity android:name=".UsuarioActivity" />
-        <activity android:name=".ResultadosActivity" />
-        <activity android:name=".PosicionesActivity" />
-        <activity android:name=".ApuestasActivity"></activity>
+        <activity android:name=".UI.LogInActivity" />
+        <activity android:name=".UI.SignUpActivity" />
+        <activity android:name=".UI.MenuActivity" />
+        <activity android:name=".UI.TablaPartidosActivity" />
+        <activity android:name=".UI.UsuarioActivity" />
+        <activity android:name=".UI.ResultadosActivity" />
+        <activity android:name=".UI.PosicionesActivity" />
+        <activity android:name=".UI.ApuestasActivity"></activity>
     </application>
 
 </manifest>

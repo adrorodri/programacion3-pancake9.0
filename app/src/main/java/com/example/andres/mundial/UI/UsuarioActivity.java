@@ -1,10 +1,12 @@
-package com.example.andres.mundial;
+package com.example.andres.mundial.UI;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.andres.mundial.R;
 
 public class UsuarioActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;

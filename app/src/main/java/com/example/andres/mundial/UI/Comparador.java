@@ -1,4 +1,4 @@
-package com.example.andres.mundial;
+package com.example.andres.mundial.UI;
 
 import android.widget.Toast;
 

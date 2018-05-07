@@ -1,17 +1,43 @@
-package com.example.andres.mundial;
+package com.example.andres.mundial.UI;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
 
+import com.example.andres.mundial.R;
 
-public class MenuActivity extends AppCompatActivity {
+public class ApuestasActivity extends AppCompatActivity {
+
+    EditText aa1;
+    EditText aa2;
+    int anum1=0;
+    int anum2=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu);
+        setContentView(R.layout.activity_apuestas);
+        aa1= findViewById(R.id.aa11);
+        aa2=findViewById(R.id.aa12);
+    }
+
+    public int getAa1() {
+        return anum1;
+    }
+
+    public int getAa2() {
+        return anum2;
+    }
+    public  void  apostar(View view){
+        Comparador a=new Comparador();
+        char a1= aa1.getText().charAt(0);
+        anum1= (int)(a1 -48);
+        char a2= aa2.getText().charAt(0);
+        anum2= (int)(a2 -48);
+        Toast.makeText(this, "Tu puntaje es "+a.compara(anum1,1,anum2,2), Toast.LENGTH_SHORT).show();
     }
 
     public void clickDraw(View view){
@@ -30,7 +56,7 @@ public class MenuActivity extends AppCompatActivity {
                 break;
             }
             case R.id.apuestas:{
-                intent = new Intent(this, UsuarioActivity.class);
+                intent = new Intent(this, ApuestasActivity.class);
                 break;
             }
             case R.id.resultados:{
@@ -44,7 +70,4 @@ public class MenuActivity extends AppCompatActivity {
         }
         startActivity(intent);
     }
-
-
-
 }

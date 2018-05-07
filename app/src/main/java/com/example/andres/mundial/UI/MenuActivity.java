@@ -1,16 +1,19 @@
-package com.example.andres.mundial;
+package com.example.andres.mundial.UI;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class TablaPartidosActivity extends AppCompatActivity {
+import com.example.andres.mundial.R;
+
+
+public class MenuActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tabla_partidos);
+        setContentView(R.layout.activity_menu);
     }
 
     public void clickDraw(View view){
@@ -29,7 +32,7 @@ public class TablaPartidosActivity extends AppCompatActivity {
                 break;
             }
             case R.id.apuestas:{
-                intent = new Intent(this,ApuestasActivity.class);
+                intent = new Intent(this, UsuarioActivity.class);
                 break;
             }
             case R.id.resultados:{
@@ -43,4 +46,7 @@ public class TablaPartidosActivity extends AppCompatActivity {
         }
         startActivity(intent);
     }
+
+
+
 }
