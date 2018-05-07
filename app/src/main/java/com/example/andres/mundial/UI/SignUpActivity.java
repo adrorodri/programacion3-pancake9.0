@@ -1,4 +1,4 @@
-package com.example.andres.mundial;
+package com.example.andres.mundial.UI;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,26 +10,33 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.andres.mundial.Model.Usuario;
+import com.example.andres.mundial.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class SignUpActivity extends AppCompatActivity {
     private static final String TAG = "SignUpActivity";
     EditText correo;
     String correoE;
+    EditText name;
+    String nameValue;
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
     private Button btnSignUp;
     EditText password;
+    private DatabaseReference databaseReference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up); // TODO: Change ConstraintLayout to another Layout
-
+        name=findViewById(R.id.nombreDeUsuario);
         correo = findViewById(R.id.correoElectronico);
         password = findViewById(R.id.contrasenaA);
         btnSignUp = findViewById(R.id.singUpConfirm);
@@ -40,6 +47,7 @@ public class SignUpActivity extends AppCompatActivity {
                 signUp(correo.getText().toString(), password.getText().toString());
             }
         });
+        databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
     public void initialize() {
@@ -85,16 +93,20 @@ public class SignUpActivity extends AppCompatActivity {
             Toast.makeText(this, "Escriba un correo valido", Toast.LENGTH_SHORT).show();
     }
 
-    private void signUp(String email, String password){
+    private void signUp(final String email, String password){
+        nameValue=name.getText().toString();
         final Intent i = new Intent(this, UsuarioActivity.class);
         firebaseAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(SignUpActivity.this, "Creación de cuenta correcta", Toast.LENGTH_SHORT).show();
+                    Usuario user = new Usuario(nameValue,nameValue, 0);
+                    databaseReference.child("Usuario").child(user.getId()).setValue(user);
                     FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                     firebaseUser.sendEmailVerification();
                     if(firebaseUser.isEmailVerified()){
+
                     startActivity(i);
                     }
                 }else{

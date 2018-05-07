@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center">
                         <EditText
-                            android:id="@+id/aa11"
+                            android:id="@+id/al1"
                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=""
@@ -72,7 +72,7 @@
                             android:layout_gravity="center"/>
 
                         <EditText
-                            android:id="@+id/aa12"
+                            android:id="@+id/av1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text=""
@@ -141,7 +141,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
-                        android:id="@+id/aa21"
+                        android:id="@+id/al2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -158,7 +158,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
-                        android:id="@+id/aa22"
+                        android:id="@+id/av2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -224,7 +224,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
-                        android:id="@+id/aa31"
+                        android:id="@+id/av3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -241,7 +241,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
-                        android:id="@+id/aa32"
+                        android:id="@+id/al3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -307,7 +307,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
-                        android:id="@+id/aa41"
+                        android:id="@+id/av4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -324,7 +324,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
-                        android:id="@+id/aa42"
+                        android:id="@+id/al4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -390,7 +390,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
-                        android:id="@+id/aa51"
+                        android:id="@+id/av5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -407,7 +407,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
-                        android:id="@+id/aa52"
+                        android:id="@+id/al5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -473,7 +473,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center">
                     <EditText
-                        android:id="@+id/aa61"
+                        android:id="@+id/av6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -490,7 +490,7 @@
                         android:layout_gravity="center"/>
 
                     <EditText
-                        android:id="@+id/aa62"
+                        android:id="@+id/al6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
