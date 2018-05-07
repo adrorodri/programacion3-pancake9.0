@@ -21,14 +21,7 @@ public class ResultadosActivity extends AppCompatActivity {
         ra2 = findViewById(R.id.ra12);
 
     }
-    public void apostar (View view){
-        Comparador a = new Comparador();
-        char r1= ra1.getText().charAt(0);
-        rnum1= r1 -48;
-        char r2= ra1.getText().charAt(0);
-        rnum2= r2 -48;
-        Toast.makeText(this, "Tu puntaje es: "+ a.compara(rnum1, 1, rnum2,2), Toast.LENGTH_SHORT).show();
-    }
+
     public void clickDraw(View view){
         Intent intent;
         switch (view.getId()){
