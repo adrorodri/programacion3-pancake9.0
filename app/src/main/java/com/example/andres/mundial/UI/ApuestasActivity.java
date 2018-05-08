@@ -3,7 +3,9 @@ package com.example.andres.mundial.UI;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -20,6 +22,9 @@ public class ApuestasActivity extends AppCompatActivity {
     static final String SHARED_PREFERENCES = "MySharedPreferences";
     static final String KEY_USERNAME = "username";
     EditText [][]apostar = new EditText[2][6];
+    private FirebaseAuth firebaseAuth;
+    private FirebaseAuth.AuthStateListener authStateListener;
+    private FirebaseUser firebaseUser;
 
 
     @Override
@@ -27,6 +32,8 @@ public class ApuestasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apuestas);
         sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
+        initialize();
+        firebaseUser.getUid();
         apostar[0][0] = findViewById(R.id.al1);
         apostar[1][0] = findViewById(R.id.av1);
         apostar[0][1] = findViewById(R.id.al2);
@@ -39,6 +46,15 @@ public class ApuestasActivity extends AppCompatActivity {
         apostar[1][4] = findViewById(R.id.av5);
         apostar[0][5] = findViewById(R.id.al6);
         apostar[1][5] = findViewById(R.id.av6);
+    }
+    public void initialize() {
+        firebaseAuth = FirebaseAuth.getInstance();
+        authStateListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                firebaseUser = firebaseAuth.getCurrentUser();
+            }
+        };
     }
 
 
