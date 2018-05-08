@@ -859,87 +859,7 @@
 
             </FrameLayout>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/medio"
-                android:background="@color/colorRussia">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="start"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/egipto" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="37dp"
-                        android:layout_marginVertical="5dp"
-                        android:text="  Egipto"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="@dimen/medio" />
-
-                </LinearLayout>
-
-                <FrameLayout
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textColor="@color/colorAccent"
-                        android:textSize="@dimen/medioG"
-                        android:inputType="number"
-                        android:layout_gravity="start"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="-"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="@dimen/medioG"
-                        android:layout_gravity="center"/>
-
-                    <EditText
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text=""
-                        android:textColor="@color/colorAccent"
-                        android:textSize="@dimen/medioG"
-                        android:inputType="number"
-                        android:layout_gravity="end"/>
-                </FrameLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="37dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginVertical="5dp"
-                        android:text="Uruguay"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="@dimen/medio" />
-
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="end"
-                        android:src="@drawable/uruguay" />
-                </LinearLayout>
-
-            </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -1108,7 +1028,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="GRUPO C - RESULTADOS"
+                android:text="GRUPO C - APUESTAS"
                 android:textColor="@color/colorAccent"
                 android:textSize="@dimen/grande"/>
 
@@ -1608,7 +1528,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/grande"
                 android:textColor="@color/colorAccent"
-                android:text="GRUPO D - RESULTADOS"/>
+                android:text="GRUPO D - APUESTAS"/>
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -2099,18 +2019,19 @@
                 </LinearLayout>
 
             </FrameLayout>
+
             <Button
+                android:id="@+id/botapostar"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/medio"
-                android:layout_marginBottom="@dimen/medio"
                 android:layout_gravity="center"
-                android:textColor="@color/colorAccent"
-                android:text="CONFIRMAR"
-                android:textSize="@dimen/medioG"
+                android:layout_marginBottom="@dimen/medio"
+                android:layout_marginTop="@dimen/medio"
                 android:background="@drawable/cuadradotext"
-                android:id="@+id/botapostar"
-                android:onClick="apostar"/>
+                android:onClick="apostar"
+                android:text="CONFIRMAR"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/medioG" />
 
 
 

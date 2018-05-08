@@ -5,7 +5,7 @@ package com.example.andres.mundial.Model;
  */
 
 public class Usuario {
-
+    int[] partidos= new int[6];
 
     private String nombre;
     private int puntaje;
