@@ -16,16 +16,10 @@ public class UsuarioActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_usuario);
+
         sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
 
     }
-    public void clickL(View view){
-        setSharedPreferences();
-        Intent i = new Intent(this, MainActivity.class);
-        startActivity(i);
-    }
-
-
     public void setSharedPreferences() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean(KEY_USERNAME, false);
@@ -52,6 +46,11 @@ public class UsuarioActivity extends AppCompatActivity {
             }
             case R.id.resultados:{
                 intent = new Intent(this, ResultadosActivity.class);
+                break;
+            }
+            case R.id.logout:{
+                setSharedPreferences();
+                intent = new Intent(this, MainActivity.class);
                 break;
             }
             default:{

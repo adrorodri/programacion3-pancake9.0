@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="grande">30dp</dimen>
+    <dimen name="grandem">25dp</dimen>
     <dimen name="medio">15dp</dimen>
     <dimen name="medioG">20dp</dimen>
 </resources>

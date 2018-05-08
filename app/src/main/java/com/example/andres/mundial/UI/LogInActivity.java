@@ -45,12 +45,12 @@ public class LogInActivity extends AppCompatActivity {
         }
         initialize();
 
-        btnLogIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                logIn(usuario.getText().toString(), password.getText().toString());
-            }
-        });
+        //btnLogIn.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View view) {
+           //     logIn(usuario.getText().toString(), password.getText().toString());
+         //   }
+       // });
     }
     public void initialize() {
         firebaseAuth = FirebaseAuth.getInstance();
@@ -69,24 +69,17 @@ public class LogInActivity extends AppCompatActivity {
     }
 
     public void logClick(View view){
-
-        usuarioV = String.valueOf(usuario.getText());
-        passwordV = String.valueOf(password.getText());
-        Intent i;
-        if (password.getText().toString().isEmpty()) {
-            password.setHint("Llene este campo");
+        if(password.getText().toString().isEmpty()|| usuario.getText().toString().isEmpty()){
+            if (password.getText().toString().isEmpty())
+                password.setHint("Llene este campo");
+            if (usuario.getText().toString().isEmpty())
+                usuario.setHint("llene este campo");
         }
-        if (usuario.getText().toString().isEmpty()) {
-            usuario.setHint("llene este campo");
-        }
-        if (passwordV.equals("123") && usuarioV.equals("Pan")) {
-            i = new Intent(this, UsuarioActivity.class);
+        else {
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean(KEY_USERNAME, true);
             editor.apply();
-            startActivity(i);
-        } else {
-            Toast.makeText(this, "UsuarioActivity o cotraseña equivocado", Toast.LENGTH_SHORT).show();
+            logIn(usuario.getText().toString(), password.getText().toString());
         }
     }
 
