@@ -333,7 +333,7 @@
                         android:layout_height="match_parent"
                         android:src="@drawable/uruguay" />
 
-                    <TextView
+                        <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="37dp"
                         android:layout_marginVertical="5dp"
@@ -762,78 +762,8 @@
 
             </FrameLayout>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/medio"
-                android:background="@color/colorRussia">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="start"
-                    android:orientation="horizontal">
-
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/egipto" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="37dp"
-                        android:layout_marginVertical="5dp"
-                        android:text="  Egipto"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="@dimen/medio" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="08:00 hs"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="@dimen/medioG" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="  Vie 15/06"
-                        android:textColor="@color/colorAccent" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="37dp"
-                        android:layout_marginEnd="5dp"
-                        android:layout_marginVertical="5dp"
-                        android:text="Uruguay"
-                        android:textColor="@color/colorAccent"
-                        android:textSize="@dimen/medio" />
 
 
-                    <ImageView
-                        android:layout_width="50dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="end"
-                        android:src="@drawable/uruguay" />
-                </LinearLayout>
-
-            </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"

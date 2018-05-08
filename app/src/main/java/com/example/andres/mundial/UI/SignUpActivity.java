@@ -46,6 +46,14 @@ public class SignUpActivity extends AppCompatActivity {
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if(password.getText().toString().isEmpty()|| name.getText().toString().isEmpty()||correo.getText().toString().isEmpty()){
+                    if (password.getText().toString().isEmpty())
+                        password.setHint("Llene este campo");
+                    if (correo.getText().toString().isEmpty())
+                        correo.setHint("llene este campo");
+                    if (name.getText().toString().isEmpty())
+                        name.setHint("llene este campo");
+                }else
                 signUp(correo.getText().toString(), password.getText().toString());
             }
         });

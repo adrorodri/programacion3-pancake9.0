@@ -5,25 +5,18 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.andres.mundial.Model.Comparador;
-import com.example.andres.mundial.Model.Partidos;
-import com.example.andres.mundial.Model.Usuario;
 import com.example.andres.mundial.R;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import java.util.ArrayList;
-import java.util.List;
-
 
 public class ApuestasActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
@@ -33,11 +26,6 @@ public class ApuestasActivity extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
     private FirebaseUser firebaseUser;
-    private DatabaseReference databaseReference;
-    int[] resultados1 = new int[6];
-    int[] resultados2 = new int[6];
-    private List<Integer> listScore = new ArrayList<>();
-    private List<Integer> listScore2 = new ArrayList<>();
 
 
     @Override
@@ -45,7 +33,8 @@ public class ApuestasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apuestas);
         sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
-        databaseReference = FirebaseDatabase.getInstance().getReference();
+        initialize();
+        firebaseUser.getUid();
         apostar[0][0] = findViewById(R.id.al1);
         apostar[1][0] = findViewById(R.id.av1);
         apostar[0][1] = findViewById(R.id.al2);
@@ -58,38 +47,7 @@ public class ApuestasActivity extends AppCompatActivity {
         apostar[1][4] = findViewById(R.id.av5);
         apostar[0][5] = findViewById(R.id.al6);
         apostar[1][5] = findViewById(R.id.av6);
-        listScore.clear();
-        listScore2.clear();
-        for(int k = 0 ; k <6 ; k++) {
-            databaseReference.child("Partidos").child("Partido"+k).child("resultadoEquipo1").addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    String user = dataSnapshot.getValue(String.class);
-                    int num = user.charAt(0)-48;
-                    listScore.add(num);
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-            databaseReference.child("Partidos").child("Partido"+k).child("resultadoEquipo2").addValueEventListener(new ValueEventListener() {
-                @Override
-                public void onDataChange(DataSnapshot dataSnapshot) {
-                    String user = dataSnapshot.getValue(String.class);
-                    int num = user.charAt(0)-48;
-                    listScore2.add(num);
-                }
-
-                @Override
-                public void onCancelled(DatabaseError databaseError) {
-
-                }
-            });
-        }
-        }
-
+    }
     public void initialize() {
         firebaseAuth = FirebaseAuth.getInstance();
         authStateListener = new FirebaseAuth.AuthStateListener() {
@@ -112,10 +70,8 @@ public class ApuestasActivity extends AppCompatActivity {
                 apuestasn[1][i] = (int) (apostar[1][i].getText().charAt(0) - 48);
             }
 
-
             for (int i = 0; i < 6; i++) {
-
-                a.compara(apuestasn[0][i],listScore.get(i), apuestasn[1][i], listScore2.get(i));
+                a.compara(apuestasn[0][i], 2, apuestasn[1][i], 1);
             }
             bloquearGrupoA();
             Toast.makeText(this, "Tu puntaje es " + a.getContador(), Toast.LENGTH_SHORT).show();

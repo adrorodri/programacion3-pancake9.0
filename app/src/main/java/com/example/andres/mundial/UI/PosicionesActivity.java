@@ -5,12 +5,17 @@ import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.andres.mundial.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class PosicionesActivity extends AppCompatActivity {
+    ListView listView;
+    String[] posiciones = new String[]{"primero","segundo","tercero","cuarto"};
+
     private DatabaseReference databaseReference;
     SharedPreferences sharedPreferences;
     static final String SHARED_PREFERENCES = "MySharedPreferences";
@@ -21,6 +26,10 @@ public class PosicionesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_posiciones);
         databaseReference = FirebaseDatabase.getInstance().getReference();
         sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
+        listView=(ListView) findViewById(R.id.listView);
+        ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,posiciones);
+
+        listView.setAdapter(adapter);
     }
     public void setSharedPreferences() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
