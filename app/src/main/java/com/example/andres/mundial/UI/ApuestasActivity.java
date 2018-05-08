@@ -21,20 +21,18 @@ public class ApuestasActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     static final String SHARED_PREFERENCES = "MySharedPreferences";
     //static final String KEY_USERNAME = "username";
-    static final String usuario = "michael";
-    static final
+    //static final String usuario = "michael";
     EditText [][]apostar = new EditText[2][6];
-   /* private FirebaseAuth firebaseAuth;
+    private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
     private FirebaseUser firebaseUser;
-    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apuestas);
         sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
-        //initialize();
+        initialize();
         apostar[0][0] = findViewById(R.id.al1);
         apostar[1][0] = findViewById(R.id.av1);
         apostar[0][1] = findViewById(R.id.al2);
@@ -47,13 +45,13 @@ public class ApuestasActivity extends AppCompatActivity {
         apostar[1][4] = findViewById(R.id.av5);
         apostar[0][5] = findViewById(R.id.al6);
         apostar[1][5] = findViewById(R.id.av6);
-        //String usuario = firebaseUser.getUid();
+        String usuario = firebaseUser.getUid();
         if(sharedPreferences.getBoolean(usuario,false)){
             valorTextEdit();
             bloquearGrupoA();
         }
     }
-    /*public void initialize() {
+    public void initialize() {
         firebaseAuth = FirebaseAuth.getInstance();
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -61,7 +59,7 @@ public class ApuestasActivity extends AppCompatActivity {
                 firebaseUser = firebaseAuth.getCurrentUser();
             }
         };
-    }*/
+    }
 
 
     public void apostar(View view) {
@@ -80,7 +78,7 @@ public class ApuestasActivity extends AppCompatActivity {
         }
     }
     public void guardarApuestas(int [][] ap){
-       // String usuario = firebaseUser.getUid();
+       String usuario = firebaseUser.getUid();
         SharedPreferences.Editor editor = sharedPreferences.edit();
         for (int i = 0 ; i< 6 ; i++){
             editor.putInt(usuario +"0"+(char) (i+48), ap [0][i]);
@@ -89,7 +87,7 @@ public class ApuestasActivity extends AppCompatActivity {
         editor.apply();
     }
     public void valorTextEdit(){
-       // String usuario = firebaseUser.getUid();
+       String usuario = firebaseUser.getUid();
         for (int i = 0; i<6 ;i++ ) {
             String a = (sharedPreferences.getInt(usuario +"0"+(char) (i+48),0)) + "";
             String b = (sharedPreferences.getInt(usuario +"1"+(char) (i+48),0)) + "";
@@ -98,7 +96,7 @@ public class ApuestasActivity extends AppCompatActivity {
         }
     }
     public void bloquearGrupoA() {
-        //String usuario = firebaseUser.getUid();
+        String usuario = firebaseUser.getUid();
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putBoolean(usuario, true);
             editor.apply();

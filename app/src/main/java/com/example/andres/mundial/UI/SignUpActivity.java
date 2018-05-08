@@ -43,20 +43,12 @@ public class SignUpActivity extends AppCompatActivity {
         password = findViewById(R.id.contrasenaA);
         btnSignUp = findViewById(R.id.singUpConfirm);
         initialize();
-        btnSignUp.setOnClickListener(new View.OnClickListener() {
+       /* btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(password.getText().toString().isEmpty()|| name.getText().toString().isEmpty()||correo.getText().toString().isEmpty()){
-                    if (password.getText().toString().isEmpty())
-                        password.setHint("Llene este campo");
-                    if (correo.getText().toString().isEmpty())
-                        correo.setHint("llene este campo");
-                    if (name.getText().toString().isEmpty())
-                        name.setHint("llene este campo");
-                }else
-                signUp(correo.getText().toString(), password.getText().toString());
+
             }
-        });
+        });*/
         databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
@@ -95,12 +87,18 @@ public class SignUpActivity extends AppCompatActivity {
     public void click(View view) {
 
         correoE = String.valueOf(correo.getText());
-        if (verificarCorre(correoE)) {
-            Intent i;
-            i = new Intent(this, UsuarioActivity.class);
-            startActivity(i);
-        } else
-            Toast.makeText(this, "Escriba un correo valido", Toast.LENGTH_SHORT).show();
+        //if (verificarCorre(correoE)) {
+            if(password.getText().toString().isEmpty()|| name.getText().toString().isEmpty()||correo.getText().toString().isEmpty()){
+                if (password.getText().toString().isEmpty())
+                    password.setHint("Llene este campo");
+                if (correo.getText().toString().isEmpty())
+                    correo.setHint("llene este campo");
+                if (name.getText().toString().isEmpty())
+                    name.setHint("llene este campo");
+            }else
+                signUp(correo.getText().toString(), password.getText().toString());
+       // } else
+         //   Toast.makeText(this, "Escriba un correo valido", Toast.LENGTH_SHORT).show();
     }
 
     private void signUp(final String email, String password){
@@ -122,7 +120,7 @@ public class SignUpActivity extends AppCompatActivity {
 
                     if(firebaseUser.isEmailVerified()){
 
-                    startActivity(i);
+                        startActivity(i);
                     }
                 }else{
                     Toast.makeText(SignUpActivity.this, "Creación de cuenta incorrecta", Toast.LENGTH_SHORT).show();
