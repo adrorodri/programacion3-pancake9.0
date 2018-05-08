@@ -20,20 +20,21 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ApuestasActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     static final String SHARED_PREFERENCES = "MySharedPreferences";
-    static final String KEY_USERNAME = "username";
+    //static final String KEY_USERNAME = "username";
+    static final String usuario = "michael";
+    static final
     EditText [][]apostar = new EditText[2][6];
-    private FirebaseAuth firebaseAuth;
+   /* private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
     private FirebaseUser firebaseUser;
-
+    */
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apuestas);
         sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
-        initialize();
-        firebaseUser.getUid();
+        //initialize();
         apostar[0][0] = findViewById(R.id.al1);
         apostar[1][0] = findViewById(R.id.av1);
         apostar[0][1] = findViewById(R.id.al2);
@@ -46,8 +47,13 @@ public class ApuestasActivity extends AppCompatActivity {
         apostar[1][4] = findViewById(R.id.av5);
         apostar[0][5] = findViewById(R.id.al6);
         apostar[1][5] = findViewById(R.id.av6);
+        //String usuario = firebaseUser.getUid();
+        if(sharedPreferences.getBoolean(usuario,false)){
+            valorTextEdit();
+            bloquearGrupoA();
+        }
     }
-    public void initialize() {
+    /*public void initialize() {
         firebaseAuth = FirebaseAuth.getInstance();
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -55,7 +61,7 @@ public class ApuestasActivity extends AppCompatActivity {
                 firebaseUser = firebaseAuth.getCurrentUser();
             }
         };
-    }
+    }*/
 
 
     public void apostar(View view) {
@@ -68,16 +74,34 @@ public class ApuestasActivity extends AppCompatActivity {
                 apuestasn[0][i] = (int) (apostar[0][i].getText().charAt(0) - 48);
                 apuestasn[1][i] = (int) (apostar[1][i].getText().charAt(0) - 48);
             }
-
-            for (int i = 0; i < 6; i++) {
-                a.compara(apuestasn[0][i], 2, apuestasn[1][i], 1);
-            }
+            guardarApuestas(apuestasn);
             bloquearGrupoA();
             Toast.makeText(this, "Tu puntaje es " + a.getContador(), Toast.LENGTH_SHORT).show();
         }
     }
-
+    public void guardarApuestas(int [][] ap){
+       // String usuario = firebaseUser.getUid();
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        for (int i = 0 ; i< 6 ; i++){
+            editor.putInt(usuario +"0"+(char) (i+48), ap [0][i]);
+            editor.putInt(usuario +"1"+(char) (i+48), ap [1][i]);
+        }
+        editor.apply();
+    }
+    public void valorTextEdit(){
+       // String usuario = firebaseUser.getUid();
+        for (int i = 0; i<6 ;i++ ) {
+            String a = (sharedPreferences.getInt(usuario +"0"+(char) (i+48),0)) + "";
+            String b = (sharedPreferences.getInt(usuario +"1"+(char) (i+48),0)) + "";
+            apostar[0][i].setText(a);
+            apostar[1][i].setText(b);
+        }
+    }
     public void bloquearGrupoA() {
+        //String usuario = firebaseUser.getUid();
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putBoolean(usuario, true);
+            editor.apply();
         for (int i = 0; i < 6; i++) {
             apostar[0][i].setEnabled(false);
             apostar[1][i].setEnabled(false);
@@ -92,11 +116,11 @@ public class ApuestasActivity extends AppCompatActivity {
         return false;
     }
 
-    public void setSharedPreferences() {
+    /*public void setSharedPreferences() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean(KEY_USERNAME, false);
         editor.apply();
-    }
+    }*/
     public void clickDraw(View view){
         Intent intent;
         switch (view.getId()){
@@ -121,7 +145,7 @@ public class ApuestasActivity extends AppCompatActivity {
                 break;
             }
             case R.id.logout:{
-                setSharedPreferences();
+                //setSharedPreferences();
                 intent = new Intent(this, MainActivity.class);
                 break;
             }
