@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.andres.mundial.Model.Partidos;
 import com.example.andres.mundial.Model.Usuario;
 import com.example.andres.mundial.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -31,6 +32,7 @@ public class SignUpActivity extends AppCompatActivity {
     private Button btnSignUp;
     EditText password;
     private DatabaseReference databaseReference;
+    private FirebaseUser firebaseUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +57,7 @@ public class SignUpActivity extends AppCompatActivity {
         authStateListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
-                FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
+                firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null) {
                     Log.w(TAG,"onAuthStateChanged - signed up" + firebaseUser.getUid() );
                     Log.w(TAG,"onAuthStateChanged - signed up" + firebaseUser.getEmail());
@@ -101,10 +103,15 @@ public class SignUpActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
                     Toast.makeText(SignUpActivity.this, "Creación de cuenta correcta", Toast.LENGTH_SHORT).show();
-                    Usuario user = new Usuario(nameValue,nameValue, 0);
-                    databaseReference.child("Usuario").child(user.getId()).setValue(user);
                     FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                     firebaseUser.sendEmailVerification();
+                    Usuario user = new Usuario( firebaseUser.getUid(),nameValue, 0);
+                    databaseReference.child("Usuario").child(user.getId()).setValue(user);
+                    for(int j = 0; j<6;j++){
+
+                      databaseReference.child("Usuario").child(user.getId()).child("Partidos").child("Partido"+j).setValue(new Partidos(Integer.MAX_VALUE,Integer.MAX_VALUE,"Egipto","Uruguay"));
+                    };
+
                     if(firebaseUser.isEmailVerified()){
 
                     startActivity(i);
