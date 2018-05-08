@@ -39,18 +39,18 @@ public class LogInActivity extends AppCompatActivity {
         password = findViewById(R.id.password);
         btnLogIn = findViewById(R.id.botLog);
         sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
-        if(sharedPreferences.getBoolean(KEY_USERNAME,false)) {
+        /*if(sharedPreferences.getBoolean(KEY_USERNAME,false)) {
             Intent i = new Intent(this, UsuarioActivity.class);
             startActivity(i);
-        }
+        }*/
         initialize();
 
-        //btnLogIn.setOnClickListener(new View.OnClickListener() {
-            //@Override
-            //public void onClick(View view) {
-           //     logIn(usuario.getText().toString(), password.getText().toString());
-         //   }
-       // });
+        /*btnLogIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                logIn(usuario.getText().toString(), password.getText().toString());
+            }
+        });*/
     }
     public void initialize() {
         firebaseAuth = FirebaseAuth.getInstance();
@@ -91,20 +91,14 @@ public class LogInActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if(task.isSuccessful()){
-
-                    if(firebaseUser.isEmailVerified()){
                         Toast.makeText(LogInActivity.this, "Validación correcta", Toast.LENGTH_SHORT).show();
                         startActivity(i);
-                    }
-
                 }else{
                     Toast.makeText(LogInActivity.this, "Error en la validación", Toast.LENGTH_SHORT).show();
                 }
             }
         });
     }
-
-
 
     @Override
     protected void onStart() {
@@ -117,8 +111,4 @@ public class LogInActivity extends AppCompatActivity {
         super.onStop();
         firebaseAuth.removeAuthStateListener(authStateListener);
     }
-
-
-
-
 }
