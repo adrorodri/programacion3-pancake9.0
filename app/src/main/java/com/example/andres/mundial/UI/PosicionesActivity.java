@@ -25,15 +25,15 @@ public class PosicionesActivity extends AppCompatActivity {
 
     private DatabaseReference databaseReference;
     SharedPreferences sharedPreferences;
-    static final String SHARED_PREFERENCES = "MySharedPreferences";
+    /*static final String SHARED_PREFERENCES = "MySharedPreferences";
     static final String KEY_USERNAME = "username";
-
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_posiciones);
         databaseReference = FirebaseDatabase.getInstance().getReference();
-        sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
+        //sharedPreferences = getSharedPreferences(SHARED_PREFERENCES, MODE_PRIVATE);
         // listView=(ListView) findViewById(R.id.listView);
         //ArrayAdapter<String> adapter=new ArrayAdapter<String>(this,android.R.layout.simple_expandable_list_item_1,posiciones);
 
@@ -79,41 +79,41 @@ public class PosicionesActivity extends AppCompatActivity {
     }
 
 
-    public void setSharedPreferences() {
+    /*public void setSharedPreferences() {
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putBoolean(KEY_USERNAME, false);
         editor.apply();
-    }
+    }*/
 
-    public void clickDraw(View view) {
+    public void clickDraw(View view){
         Intent intent;
-        switch (view.getId()) {
-            case R.id.perfil: {
+        switch (view.getId()){
+            case R.id.perfil:{
                 intent = new Intent(this, UsuarioActivity.class);
                 break;
             }
-            case R.id.tablas: {
-                intent = new Intent(this, PosicionesActivity.class);
+            case R.id.tablas:{
+                intent = new Intent(this,PosicionesActivity.class);
                 break;
             }
-            case R.id.partidos: {
+            case R.id.partidos:{
                 intent = new Intent(this, TablaPartidosActivity.class);
                 break;
             }
-            case R.id.apuestas: {
+            case R.id.apuestas:{
                 intent = new Intent(this, ApuestasActivity.class);
                 break;
             }
-            case R.id.resultados: {
+            case R.id.resultados:{
                 intent = new Intent(this, ResultadosActivity.class);
                 break;
             }
-            case R.id.logout: {
-                setSharedPreferences();
+            case R.id.logout:{
+                //setSharedPreferences();
                 intent = new Intent(this, MainActivity.class);
                 break;
             }
-            default: {
+            default:{
                 intent = new Intent(this, UsuarioActivity.class);
                 break;
             }

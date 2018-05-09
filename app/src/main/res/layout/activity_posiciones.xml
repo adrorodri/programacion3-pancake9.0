@@ -33,4 +33,10 @@
         android:layout_gravity="start"
         layout="@layout/activity_menu"/>
     </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        layout="@layout/activity_menu"/>
 </android.support.v4.widget.DrawerLayout>
