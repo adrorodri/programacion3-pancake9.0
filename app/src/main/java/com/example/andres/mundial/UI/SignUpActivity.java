@@ -49,6 +49,7 @@ public class SignUpActivity extends AppCompatActivity {
 
             }
         });*/
+
         databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
@@ -112,7 +113,7 @@ public class SignUpActivity extends AppCompatActivity {
                     FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                     firebaseUser.sendEmailVerification();
                     Usuario user = new Usuario( firebaseUser.getUid(),nameValue, 0);
-                    databaseReference.child("Usuario").child(user.getId()).setValue(user);
+                   // databaseReference.child("Usuario").child(user.getId()).setValue(user);
                     for(int j = 0; j<6;j++){
 
                       databaseReference.child("Usuario").child(user.getId()).child("Partidos").child("Partido"+j).setValue(new Partidos(Integer.MAX_VALUE,Integer.MAX_VALUE,"Egipto","Uruguay"));

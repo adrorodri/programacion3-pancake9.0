@@ -45,6 +45,7 @@ public class ApuestasActivity extends AppCompatActivity {
         apostar[1][4] = findViewById(R.id.av5);
         apostar[0][5] = findViewById(R.id.al6);
         apostar[1][5] = findViewById(R.id.av6);
+
         String usuario = firebaseUser.getUid();
         if(sharedPreferences.getBoolean(usuario,false)) {
             valorTextEdit();
@@ -71,6 +72,9 @@ public class ApuestasActivity extends AppCompatActivity {
             for (int i = 0; i < 6; i++) {
                 apuestasn[0][i] = (int) (apostar[0][i].getText().charAt(0) - 48);
                 apuestasn[1][i] = (int) (apostar[1][i].getText().charAt(0) - 48);
+            }
+            for (int i = 0; i < 6; i++) {
+                a.compara(apuestasn[0][i], 2, apuestasn[1][i], 1);
             }
             guardarApuestas(apuestasn);
             bloquearGrupoA();
