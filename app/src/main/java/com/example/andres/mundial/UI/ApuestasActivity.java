@@ -20,8 +20,8 @@ import com.google.firebase.database.FirebaseDatabase;
 public class ApuestasActivity extends AppCompatActivity {
     SharedPreferences sharedPreferences;
     static final String SHARED_PREFERENCES = "MySharedPreferences";
-    //static final String KEY_USERNAME = "username";
-    //static final String usuario = "michael";
+    /*static final String KEY_USERNAME = "username";
+    static final String usuario = "michael";*/
     EditText [][]apostar = new EditText[2][6];
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener;
@@ -46,10 +46,11 @@ public class ApuestasActivity extends AppCompatActivity {
         apostar[0][5] = findViewById(R.id.al6);
         apostar[1][5] = findViewById(R.id.av6);
         String usuario = firebaseUser.getUid();
-        if(sharedPreferences.getBoolean(usuario,false)){
+        if(sharedPreferences.getBoolean(usuario,false)) {
             valorTextEdit();
             bloquearGrupoA();
         }
+
     }
     public void initialize() {
         firebaseAuth = FirebaseAuth.getInstance();
@@ -57,11 +58,10 @@ public class ApuestasActivity extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 firebaseUser = firebaseAuth.getCurrentUser();
+
             }
         };
     }
-
-
     public void apostar(View view) {
         Comparador a = new Comparador();
         if (grupoAVacio()) {

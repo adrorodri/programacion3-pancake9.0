@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Usuario"
+            android:text="Correo electronico"
             android:textSize="@dimen/medio"
             android:textStyle="bold"/>
 
@@ -30,14 +30,14 @@
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:hint="Escriba su usuario"
+            android:hint="Escriba su email"
             android:id="@+id/usuario"
             android:background="@drawable/smooth_square"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Password"
+            android:text="Contraseña"
             android:textSize="@dimen/medio"
             android:textStyle="bold"/>
         <EditText
@@ -45,7 +45,7 @@
             android:layout_width="200dp"
             android:gravity="center"
             android:layout_height="wrap_content"
-            android:hint="Escriba su password"
+            android:hint="Escriba su contraseña"
             android:inputType="textPassword"
             android:id="@+id/password"
             android:background="@drawable/smooth_square"/>
