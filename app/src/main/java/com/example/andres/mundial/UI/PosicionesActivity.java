@@ -44,12 +44,11 @@ public class PosicionesActivity extends AppCompatActivity {
 
         // Initializing a new String Array
         String[] fruits = new String[]{
-                "1º"+"African mango",
-                "2º"+"Ambarella",
-                "3º"+"American Black Elderberry",
-                "4º"+"Ackee",
-                "5º"+"American persimmon",
-                "6º"+"Babaco"
+                "1º "+" African mango "+"5"+"pts",
+                "2º "+" Ambarella "+"4"+"pts",
+                "3º "+" American Black Elderberry "+"3"+"pts",
+                "4º "+" Ackee "+"1"+"pts",
+                "5º "+" American persimmon "+"1"+"pts"
         };
 
         // Create a List from String Array elements
@@ -68,7 +67,7 @@ public class PosicionesActivity extends AppCompatActivity {
 
                 // Set the text color of TextView (ListView Item)
                 tv.setTextColor(Color.WHITE);
-                tv.setTextSize(30);
+                tv.setTextSize(26);
 
                 // Generate ListView Item using TextView
                 return view;

@@ -17,6 +17,7 @@
             android:layout_height="wrap_content"
             android:textColor="@color/colorAccent"
             android:text="TABLA DE POSICIONES"
+            android:layout_marginBottom="@dimen/grande"
             android:layout_marginStart="30dp"
             android:textStyle="bold"
             android:textSize="@dimen/grande"/>
