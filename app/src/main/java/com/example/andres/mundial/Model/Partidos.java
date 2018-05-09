@@ -5,32 +5,32 @@ package com.example.andres.mundial.Model;
  */
 
 public class Partidos {
-    private int resultadoEquipo1;
-    private int resultadoEquipo2;
+    private String resultadoEquipo1;
+    private String resultadoEquipo2;
     private String equipo1;
     private String equipo2;
 
 
-    public Partidos(int resultadoEquipo1, int resultadoEquipo2, String equipo1, String equipo2) {
+    public Partidos(String resultadoEquipo1, String resultadoEquipo2, String equipo1, String equipo2) {
         this.resultadoEquipo1 = resultadoEquipo1;
         this.resultadoEquipo2 = resultadoEquipo2;
         this.equipo1 = equipo1;
         this.equipo2 = equipo2;
     }
 
-    public int getResultadoEquipo1() {
+    public String getResultadoEquipo1() {
         return resultadoEquipo1;
     }
 
-    public void setResultadoEquipo1(int resultadoEquipo1) {
+    public void setResultadoEquipo1(String resultadoEquipo1) {
         this.resultadoEquipo1 = resultadoEquipo1;
     }
 
-    public int getResultadoEquipo2() {
+    public String getResultadoEquipo2() {
         return resultadoEquipo2;
     }
 
-    public void setResultadoEquipo2(int resultadoEquipo2) {
+    public void setResultadoEquipo2(String resultadoEquipo2) {
         this.resultadoEquipo2 = resultadoEquipo2;
     }
 
