@@ -25,6 +25,7 @@ public class PosicionesActivity extends AppCompatActivity {
 
     private DatabaseReference databaseReference;
     SharedPreferences sharedPreferences;
+
     /*static final String SHARED_PREFERENCES = "MySharedPreferences";
     static final String KEY_USERNAME = "username";
     */
@@ -39,42 +40,33 @@ public class PosicionesActivity extends AppCompatActivity {
 
         // listView.setAdapter(adapter);
 
-        // Get reference of widgets from XML layout
         final ListView lv = (ListView) findViewById(R.id.lv);
 
-        // Initializing a new String Array
+
         String[] fruits = new String[]{
-                "1º "+" African mango "+"5"+"pts",
-                "2º "+" Ambarella "+"4"+"pts",
-                "3º "+" American Black Elderberry "+"3"+"pts",
-                "4º "+" Ackee "+"1"+"pts",
-                "5º "+" American persimmon "+"1"+"pts"
+                "1º " + " Franco Carrilo " + "5" + "pts",
+                "2º " + " Gurka " + "4" + "pts",
+                "3º " + " Mango peinado " + "3" + "pts",
+                "4º " + " Lennynson " + "1" + "pts",
+                "5º " + " El Yegua " + "1" + "pts"
         };
 
-        // Create a List from String Array elements
         List<String> fruits_list = new ArrayList<String>(Arrays.asList(fruits));
 
-        // Create an ArrayAdapter from List
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>
                 (this, android.R.layout.simple_list_item_1, fruits_list) {
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
-                // Get the Item from ListView
                 View view = super.getView(position, convertView, parent);
 
-                // Initialize a TextView for ListView each Item
                 TextView tv = (TextView) view.findViewById(android.R.id.text1);
 
-                // Set the text color of TextView (ListView Item)
                 tv.setTextColor(Color.WHITE);
                 tv.setTextSize(26);
 
-                // Generate ListView Item using TextView
                 return view;
             }
         };
-
-        // DataBind ListView with items from ArrayAdapter
         lv.setAdapter(arrayAdapter);
     }
 
@@ -85,35 +77,35 @@ public class PosicionesActivity extends AppCompatActivity {
         editor.apply();
     }*/
 
-    public void clickDraw(View view){
+    public void clickDraw(View view) {
         Intent intent;
-        switch (view.getId()){
-            case R.id.perfil:{
+        switch (view.getId()) {
+            case R.id.perfil: {
                 intent = new Intent(this, UsuarioActivity.class);
                 break;
             }
-            case R.id.tablas:{
-                intent = new Intent(this,PosicionesActivity.class);
+            case R.id.tablas: {
+                intent = new Intent(this, PosicionesActivity.class);
                 break;
             }
-            case R.id.partidos:{
+            case R.id.partidos: {
                 intent = new Intent(this, TablaPartidosActivity.class);
                 break;
             }
-            case R.id.apuestas:{
+            case R.id.apuestas: {
                 intent = new Intent(this, ApuestasActivity.class);
                 break;
             }
-            case R.id.resultados:{
+            case R.id.resultados: {
                 intent = new Intent(this, ResultadosActivity.class);
                 break;
             }
-            case R.id.logout:{
+            case R.id.logout: {
                 //setSharedPreferences();
                 intent = new Intent(this, MainActivity.class);
                 break;
             }
-            default:{
+            default: {
                 intent = new Intent(this, UsuarioActivity.class);
                 break;
             }

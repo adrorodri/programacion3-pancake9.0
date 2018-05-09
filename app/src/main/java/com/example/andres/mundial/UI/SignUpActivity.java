@@ -42,15 +42,15 @@ public class SignUpActivity extends AppCompatActivity {
         correo = findViewById(R.id.correoElectronico);
         password = findViewById(R.id.contrasenaA);
         btnSignUp = findViewById(R.id.singUpConfirm);
+        databaseReference = FirebaseDatabase.getInstance().getReference();
         initialize();
        /* btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+data
             }
         });*/
 
-        databaseReference = FirebaseDatabase.getInstance().getReference();
     }
 
     public void initialize() {
@@ -113,16 +113,16 @@ public class SignUpActivity extends AppCompatActivity {
                     FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                     firebaseUser.sendEmailVerification();
                     Usuario user = new Usuario( firebaseUser.getUid(),nameValue, 0);
-                   // databaseReference.child("Usuario").child(user.getId()).setValue(user);
+                    databaseReference.child("Usuario").child(user.getId()).setValue(user);
                     for(int j = 0; j<6;j++){
 
-                      databaseReference.child("Usuario").child(user.getId()).child("Partidos").child("Partido"+j).setValue(new Partidos(Integer.MAX_VALUE,Integer.MAX_VALUE,"Egipto","Uruguay"));
+                      databaseReference.child("Usuario").child(user.getId()).child("Partidos").child("Partido"+j).setValue(new Partidos("255555555","25555555555","Egipto","Uruguay"));
                     };
 
-                    if(firebaseUser.isEmailVerified()){
-
-                        startActivity(i);
-                    }
+//                    if(firebaseUser.isEmailVerified()){
+//
+//                        startActivity(i);
+//                    }
                 }else{
                     Toast.makeText(SignUpActivity.this, "Creación de cuenta incorrecta", Toast.LENGTH_SHORT).show();
                 }

@@ -21,10 +21,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Auron"
             android:textColor="#ffff"
             android:textSize="@dimen/grande"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:id="@+id/nombreDeUsuario"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="30"
+            android:id="@+id/puntajeUser"
             android:textColor="#ffff"
             android:textSize="@dimen/grande"
             />
