@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/azulRusia"
     android:fitsSystemWindows="true"
+    android:background="@color/azulRusia"
     android:orientation="vertical"
     tools:context="com.example.andres.mundial.UI.UsuarioActivity">
 
@@ -12,26 +12,26 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="TABLA DE POSICIONES"
             android:layout_marginBottom="@dimen/grande"
             android:layout_marginStart="30dp"
-            android:text="TABLA DE POSICIONES"
-            android:textColor="@color/colorAccent"
-            android:textSize="@dimen/grande"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:textSize="@dimen/grande"/>
 
-        <ListView
-            android:id="@+id/lv"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"></ListView>
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    </ListView>
     </LinearLayout>
 
     <include
-        layout="@layout/activity_menu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="start" />
+        android:layout_gravity="start"
+        layout="@layout/activity_menu"/>
 </android.support.v4.widget.DrawerLayout>
