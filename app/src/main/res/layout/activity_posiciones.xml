@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/colorAccent"
+    android:background="@color/azulRusia"
     android:orientation="vertical"
     tools:context="com.example.andres.mundial.UI.UsuarioActivity">
 
@@ -12,10 +12,10 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <EditText
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorNegro"
+            android:textColor="@color/colorAccent"
             android:text="TABLA DE POSICIONES"
             android:layout_marginStart="30dp"
             android:textStyle="bold"
