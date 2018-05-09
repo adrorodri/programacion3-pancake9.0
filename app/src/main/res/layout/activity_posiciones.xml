@@ -4,11 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    android:background="@color/colorNegro"
+    android:background="@color/colorAccent"
     android:orientation="vertical"
     tools:context="com.example.andres.mundial.UI.UsuarioActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorNegro"
+            android:text="TABLA DE POSICIONES"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/grande"/>
+
     <ListView
-        android:id="@+id/listView"
+        android:id="@+id/lv"
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
     </ListView>
@@ -17,5 +31,5 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         layout="@layout/activity_menu"/>
-
+    </LinearLayout>
 </android.support.v4.widget.DrawerLayout>
